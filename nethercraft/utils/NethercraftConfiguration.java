@@ -7,7 +7,7 @@
 * http://www.mod-buildcraft.com/MMPL-1.0.txt
 */
 
-package ardenexal.nethercraft.configuration;
+package ardenexal.nethercraft.utils;
 
 import java.io.File;
 
@@ -22,7 +22,7 @@ super(file);
 
 @Override
 public void save() {
-Property versionProp = null;
+/*Property versionProp = null;
 
 if (!categories.get(CATEGORY_GENERAL).containsKey("version")) {
 versionProp = new Property();
@@ -31,7 +31,7 @@ categories.get(CATEGORY_GENERAL).put("version", versionProp);
 } else
 versionProp = categories.get(CATEGORY_GENERAL).get("version");
 
-versionProp.value = "v0.1";
+versionProp.value = "v0.1";*/
 
 super.save();
 }

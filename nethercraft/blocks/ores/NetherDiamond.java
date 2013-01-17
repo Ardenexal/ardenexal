@@ -3,12 +3,11 @@ package ardenexal.nethercraft.blocks.ores;
 import java.util.ArrayList;
 import java.util.Random;
 
+import net.minecraft.block.BlockOre;
+import net.minecraft.item.Item;
+
 import ardenexal.nethercraft.CommonProxy;
 import ardenexal.nethercraft.Nethercraft;
-import net.minecraft.src.BlockOre;
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.World;
 
 public class NetherDiamond extends BlockOre {
 
@@ -27,6 +26,6 @@ public class NetherDiamond extends BlockOre {
 		return CommonProxy.BLOCK_PNG;
 	}
 public int idDroppped(int par1, Random par2Random, int par3){
-	return Item.diamond.shiftedIndex;
+	return Item.diamond.itemID;
 }
 }

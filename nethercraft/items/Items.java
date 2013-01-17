@@ -1,6 +1,7 @@
 package ardenexal.nethercraft.items;
 
 
+import net.minecraft.item.Item;
 import ardenexal.nethercraft.Nethercraft;
 import ardenexal.nethercraft.items.molds.UncookedAxeMoldItem;
 import ardenexal.nethercraft.items.molds.UncookedPickMoldItem;
@@ -13,9 +14,6 @@ import ardenexal.nethercraft.items.molds.cookedShovelMoldItem;
 import ardenexal.nethercraft.items.molds.cookedSwordBladeMoldItem;
 import ardenexal.nethercraft.items.molds.cookedSwordHandleMoldItem;
 
-import net.minecraft.src.Block;
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 

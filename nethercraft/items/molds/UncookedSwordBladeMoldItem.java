@@ -1,8 +1,8 @@
 package ardenexal.nethercraft.items.molds;
 
+import net.minecraft.item.Item;
 import ardenexal.nethercraft.CommonProxy;
 import ardenexal.nethercraft.Nethercraft;
-import net.minecraft.src.Item;
 
 public class UncookedSwordBladeMoldItem extends Item {
 
