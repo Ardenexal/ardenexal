@@ -1,8 +1,8 @@
 package ardenexal.nethercraft.items;
 
+import net.minecraft.item.Item;
 import ardenexal.nethercraft.CommonProxy;
 import ardenexal.nethercraft.Nethercraft;
-import net.minecraft.src.Item;
 
 public class JiwaStone extends Item {
 

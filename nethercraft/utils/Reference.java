@@ -1,4 +1,4 @@
-package ardenexal.nethercraft.lib;
+package ardenexal.nethercraft.utils;
 
 public class Reference {
 

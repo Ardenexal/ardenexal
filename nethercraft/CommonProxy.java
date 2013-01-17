@@ -1,13 +1,13 @@
 package ardenexal.nethercraft;
 
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.World;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 import cpw.mods.fml.common.network.IGuiHandler;
 import ardenexal.nethercraft.blocks.machines.GuiMoldBench;
 import ardenexal.nethercraft.blocks.machines.TileEntityMoldBench;
 import ardenexal.nethercraft.blocks.machines.containerMoldBench;
-import ardenexal.nethercraft.lib.Reference;
+import ardenexal.nethercraft.utils.Reference;
 
 public class CommonProxy implements IGuiHandler {
 	public static String ITEMS_PNG = Reference.SPRITE_SHEET_LOCATION + Reference.ITEM_SPRITE_SHEET;

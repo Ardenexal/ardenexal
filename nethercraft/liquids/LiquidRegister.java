@@ -1,7 +1,6 @@
 package ardenexal.nethercraft.liquids;
 
-import net.minecraft.src.Item;
-import net.minecraftforge.liquids.LiquidManager;
+import net.minecraft.item.Item;
 
 import org.lwjgl.util.glu.Registry;
 

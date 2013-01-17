@@ -3,7 +3,7 @@ package ardenexal.nethercraft.client;
 
 import net.minecraftforge.client.MinecraftForgeClient;
 import ardenexal.nethercraft.CommonProxy;
-import ardenexal.nethercraft.lib.Reference;
+import ardenexal.nethercraft.utils.Reference;
 
 public class ClientProxy extends CommonProxy {
 	

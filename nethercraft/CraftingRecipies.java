@@ -1,7 +1,7 @@
 package ardenexal.nethercraft;
 
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import ardenexal.nethercraft.items.Items;
 import cpw.mods.fml.common.registry.GameRegistry;
 
