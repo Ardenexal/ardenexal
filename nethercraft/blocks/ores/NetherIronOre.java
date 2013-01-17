@@ -1,9 +1,9 @@
 package ardenexal.nethercraft.blocks.ores;
 
 
+import net.minecraft.block.BlockOre;
 import ardenexal.nethercraft.CommonProxy;
 import ardenexal.nethercraft.Nethercraft;
-import net.minecraft.src.BlockOre;
 
 public class NetherIronOre extends BlockOre {
 

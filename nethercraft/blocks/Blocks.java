@@ -9,11 +9,11 @@ import ardenexal.nethercraft.blocks.ores.NetherIronOre;
 import ardenexal.nethercraft.blocks.ores.NetherSilverOre;
 import ardenexal.nethercraft.blocks.ores.NetherTinOre;
 import ardenexal.nethercraft.blocks.machines.*;
-import ardenexal.nethercraft.lib.Reference;
+import ardenexal.nethercraft.utils.Reference;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
-import net.minecraft.src.Block;
+import net.minecraft.block.Block;
 import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.Property;
 
@@ -65,7 +65,7 @@ public class Blocks {
 	}
 
 	public static void addBlock(Block block, String Name) {
-		GameRegistry.registerBlock(block);
+		GameRegistry.registerBlock(block, "NC_" + block.getBlockName().toString());
 		LanguageRegistry.addName(block, Name);
 	}
 }
