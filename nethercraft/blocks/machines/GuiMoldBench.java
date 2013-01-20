@@ -9,6 +9,7 @@ import net.minecraftforge.client.ForgeHooksClient;
 import org.lwjgl.opengl.GL11;
 
 import ardenexal.nethercraft.utils.Reference;
+import ardenexal.nethercraft.blocks.machines.MoldBench;
 
 public class GuiMoldBench extends GuiContainer {
 
@@ -37,7 +38,7 @@ public class GuiMoldBench extends GuiContainer {
                 int k = (height - ySize) / 2;
                 this.drawTexturedModalRect(j, k, 0, 0, 191, 176);
                 
-                displayGauge(j, k, 15, 66, engine.getScaledBurnTime(58), engineIron.getFuelId(), engineIron.getFuelMeta());
+                displayGauge(j, k, 15, 66, MoldBench.getScaledBurnTime(58), MoldBench.getMetalId(), MoldBench.getMetalMeta());
         }
     	private void displayGauge(int j, int k, int line, int col, int squaled, int liquidId, int liquidMeta) {
     		int liquidImgIndex = 0;

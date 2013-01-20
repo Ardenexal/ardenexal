@@ -3,6 +3,7 @@ package ardenexal.nethercraft.blocks.machines;
 import java.util.Random;
 
 import ardenexal.nethercraft.Nethercraft;
+import ardenexal.nethercraft.utils.Reference;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -14,9 +15,15 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.src.*;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import net.minecraftforge.liquids.LiquidContainerRegistry;
+import net.minecraftforge.liquids.LiquidTank;
 
 public class MoldBench extends BlockContainer {
 
+	public static int MAX_LIQUID = LiquidContainerRegistry.BUCKET_VOLUME * 3;
+	
+	private static LiquidTank liquidMetalTank;
+	
         public MoldBench (int id) {
                 super(id, Material.wood);
                 setHardness(2.0F);
@@ -24,6 +31,12 @@ public class MoldBench extends BlockContainer {
                 setBlockName("blockMoldBench");
                 setCreativeTab(Nethercraft.tabNethercraft);
                 
+                liquidMetalTank = new LiquidTank(MAX_LIQUID);
+        }
+        
+        @Override
+        public String getTextureFile(){
+        	return Reference.BLOCK_SPRITE_SHEET;
         }
 
         @Override
@@ -79,10 +92,18 @@ public class MoldBench extends BlockContainer {
                         }
                 }
         }
-
+    	public static int getScaledBurnTime(int i) {
+    		return liquidMetalTank.getLiquid() != null ? (int) (((float) liquidMetalTank.getLiquid().amount / (float) (MAX_LIQUID)) * i) : 0;
+    		}
         @Override
         public TileEntity createNewTileEntity(World world) {
                 return new TileEntityMoldBench();
         }
+        public static int getMetalId(){
+			return liquidMetalTank.getLiquid() !=null ? liquidMetalTank.getLiquid().itemID : 0;
+        }
+    	public static int getMetalMeta() {
+    		return liquidMetalTank.getLiquid() != null ? liquidMetalTank.getLiquid().itemMeta : 0;
+    		}
 
 }
