@@ -1,16 +1,17 @@
-package ardenexal.nethercraft.blocks.ores;
+package ardenexal.nethercraft.worldgen.ores;
+
 
 import net.minecraft.block.BlockOre;
 import ardenexal.nethercraft.CommonProxy;
 import ardenexal.nethercraft.Nethercraft;
 
-public class NetherTinOre extends BlockOre {
+public class NetherIronOre extends BlockOre {
 
-	public NetherTinOre(int par1, int par2) {
+	public NetherIronOre(int par1, int par2) {
 		super(par1, par2);
 		setHardness(4.0F);
 		setStepSound(soundStoneFootstep);
-		setBlockName("NetherTinOre");
+		setBlockName("NetherIronOre");
 		setCreativeTab(Nethercraft.tabNethercraft);
 
 
@@ -20,5 +21,4 @@ public class NetherTinOre extends BlockOre {
 	public String getTextureFile() {
 		return CommonProxy.BLOCK_PNG;
 	}
-
 }

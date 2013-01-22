@@ -13,8 +13,14 @@ public class LiquidRegister {
 	public static Item liquidTin;
 	public static Item liquidCopper;
 	
+	
 	public static void init(){
 		liquidGold = new Item(2220).setItemName("Liquid Gold");
+		liquidIron = new Item(2220).setItemName("Liquid Iron");
+		liquidSilver = new Item(2220).setItemName("Liquid Silver");
+		liquidTin = new Item(2220).setItemName("Liquid Tin");
+		liquidCopper = new Item(2220).setItemName("Liquid Copper");
+		
 	}
 
 }

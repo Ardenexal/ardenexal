@@ -1,15 +1,15 @@
 package ardenexal.nethercraft.blocks;
 
 import ardenexal.nethercraft.Nethercraft;
-import ardenexal.nethercraft.blocks.ores.HellstoneOre;
-import ardenexal.nethercraft.blocks.ores.NetherCopperOre;
-import ardenexal.nethercraft.blocks.ores.NetherDiamond;
-import ardenexal.nethercraft.blocks.ores.NetherGoldOre;
-import ardenexal.nethercraft.blocks.ores.NetherIronOre;
-import ardenexal.nethercraft.blocks.ores.NetherSilverOre;
-import ardenexal.nethercraft.blocks.ores.NetherTinOre;
-import ardenexal.nethercraft.blocks.machines.*;
+import ardenexal.nethercraft.mechanical.*;
 import ardenexal.nethercraft.utils.Reference;
+import ardenexal.nethercraft.worldgen.ores.HellstoneOre;
+import ardenexal.nethercraft.worldgen.ores.NetherCopperOre;
+import ardenexal.nethercraft.worldgen.ores.NetherDiamond;
+import ardenexal.nethercraft.worldgen.ores.NetherGoldOre;
+import ardenexal.nethercraft.worldgen.ores.NetherIronOre;
+import ardenexal.nethercraft.worldgen.ores.NetherSilverOre;
+import ardenexal.nethercraft.worldgen.ores.NetherTinOre;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;

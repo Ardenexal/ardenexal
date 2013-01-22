@@ -1,17 +1,17 @@
-package ardenexal.nethercraft.items.molds;
+package ardenexal.nethercraft.mechanical.items;
 
 import net.minecraft.item.Item;
 import ardenexal.nethercraft.CommonProxy;
 import ardenexal.nethercraft.Nethercraft;
 
-public class UncookedSwordHandleMoldItem extends Item {
+public class UncookedAxeMoldItem extends Item {
 
-	public UncookedSwordHandleMoldItem(int par1) {
+	public UncookedAxeMoldItem(int par1) {
 		super(par1);
 		setMaxStackSize(1);
 		setCreativeTab(Nethercraft.tabNethercraft);
-		setIconIndex(4);
-		setItemName("uncookedSwordHandleMold");
+		setIconIndex(1);
+		setItemName("uncookedAxeMold");
 	}
 
 	public String getTextureFile() {

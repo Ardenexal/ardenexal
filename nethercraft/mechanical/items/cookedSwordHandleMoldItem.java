@@ -1,4 +1,4 @@
-package ardenexal.nethercraft.items.molds;
+package ardenexal.nethercraft.mechanical.items;
 
 import net.minecraft.item.Item;
 import ardenexal.nethercraft.CommonProxy;

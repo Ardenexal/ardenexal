@@ -1,16 +1,16 @@
-package ardenexal.nethercraft.blocks.ores;
+package ardenexal.nethercraft.worldgen.ores;
 
 import net.minecraft.block.BlockOre;
 import ardenexal.nethercraft.CommonProxy;
 import ardenexal.nethercraft.Nethercraft;
 
-public class NetherGoldOre extends BlockOre {
+public class NetherCopperOre extends BlockOre {
 
-	public NetherGoldOre(int par1, int par2) {
+	public NetherCopperOre(int par1, int par2) {
 		super(par1, par2);
 		setHardness(4.0F);
 		setStepSound(soundStoneFootstep);
-		setBlockName("NetherGoldOre");
+		setBlockName("NetherCopperOre");
 		setCreativeTab(Nethercraft.tabNethercraft);
 
 

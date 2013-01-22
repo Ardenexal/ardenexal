@@ -3,16 +3,17 @@ package ardenexal.nethercraft.items;
 
 import net.minecraft.item.Item;
 import ardenexal.nethercraft.Nethercraft;
-import ardenexal.nethercraft.items.molds.UncookedAxeMoldItem;
-import ardenexal.nethercraft.items.molds.UncookedPickMoldItem;
-import ardenexal.nethercraft.items.molds.UncookedShovelMoldItem;
-import ardenexal.nethercraft.items.molds.UncookedSwordBladeMoldItem;
-import ardenexal.nethercraft.items.molds.UncookedSwordHandleMoldItem;
-import ardenexal.nethercraft.items.molds.cookedAxeMoldItem;
-import ardenexal.nethercraft.items.molds.cookedPickMoldItem;
-import ardenexal.nethercraft.items.molds.cookedShovelMoldItem;
-import ardenexal.nethercraft.items.molds.cookedSwordBladeMoldItem;
-import ardenexal.nethercraft.items.molds.cookedSwordHandleMoldItem;
+import ardenexal.nethercraft.mechanical.items.UncookedAxeMoldItem;
+import ardenexal.nethercraft.mechanical.items.UncookedPickMoldItem;
+import ardenexal.nethercraft.mechanical.items.UncookedShovelMoldItem;
+import ardenexal.nethercraft.mechanical.items.UncookedSwordBladeMoldItem;
+import ardenexal.nethercraft.mechanical.items.UncookedSwordHandleMoldItem;
+import ardenexal.nethercraft.mechanical.items.cookedAxeMoldItem;
+import ardenexal.nethercraft.mechanical.items.cookedPickMoldItem;
+import ardenexal.nethercraft.mechanical.items.cookedShovelMoldItem;
+import ardenexal.nethercraft.mechanical.items.cookedSwordBladeMoldItem;
+import ardenexal.nethercraft.mechanical.items.cookedSwordHandleMoldItem;
+import ardenexal.nethercraft.worldgen.ores.itemHellstone;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;

@@ -19,4 +19,9 @@ public class Reference {
 	
 	public static final int MACHINE_MOLDBENCH_ID = 1552;
 	//Item IDs
+	public static final int LIQUID_GOLD_ID = 2220;
+	public static final int LIQUID_IRON_ID = 2221;
+	public static final int LIQUID_SILVER_ID = 2222;
+	public static final int LIQUID_COPPER_ID = 2223;
+	public static final int LIQUID_TIN_ID = 2224;
 }

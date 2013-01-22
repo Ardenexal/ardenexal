@@ -1,18 +1,17 @@
-package ardenexal.nethercraft.items.molds;
+package ardenexal.nethercraft.mechanical.items;
 
 import net.minecraft.item.Item;
 import ardenexal.nethercraft.CommonProxy;
 import ardenexal.nethercraft.Nethercraft;
 
+public class cookedAxeMoldItem extends Item {
 
-public class cookedShovelMoldItem extends Item {
-
-	public cookedShovelMoldItem(int par1) {
+	public cookedAxeMoldItem(int par1) {
 		super(par1);
 		setMaxStackSize(1);
 		setCreativeTab(Nethercraft.tabNethercraft);
-		setIconIndex(7);
-		setItemName("cookedShovelMold");
+		setIconIndex(6);
+		setItemName("cookedAxeMold");
 	}
 
 	public String getTextureFile() {

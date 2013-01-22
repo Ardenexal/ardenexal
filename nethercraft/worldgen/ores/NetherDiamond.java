@@ -1,4 +1,4 @@
-package ardenexal.nethercraft.blocks.ores;
+package ardenexal.nethercraft.worldgen.ores;
 
 import java.util.ArrayList;
 import java.util.Random;

@@ -4,14 +4,14 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import cpw.mods.fml.common.network.IGuiHandler;
-import ardenexal.nethercraft.blocks.machines.GuiMoldBench;
-import ardenexal.nethercraft.blocks.machines.TileEntityMoldBench;
-import ardenexal.nethercraft.blocks.machines.containerMoldBench;
+import ardenexal.nethercraft.mechanical.container.containerMoldBench;
+import ardenexal.nethercraft.mechanical.gui.GuiMoldBench;
+import ardenexal.nethercraft.mechanical.tileentity.TileEntityMoldBench;
 import ardenexal.nethercraft.utils.Reference;
 
 public class CommonProxy implements IGuiHandler {
-	public static String ITEMS_PNG = Reference.SPRITE_SHEET_LOCATION + Reference.ITEM_SPRITE_SHEET;
-	public static String BLOCK_PNG = Reference.SPRITE_SHEET_LOCATION + Reference.BLOCK_SPRITE_SHEET;
+	public static String ITEMS_PNG = Reference.ITEM_SPRITE_SHEET;
+	public static String BLOCK_PNG = Reference.BLOCK_SPRITE_SHEET;
 
 	// Client stuff
 	public void registerRenderers() {

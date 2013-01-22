@@ -3,12 +3,12 @@ package ardenexal.nethercraft;
 import java.io.File;
 
 import ardenexal.nethercraft.blocks.Blocks;
-import ardenexal.nethercraft.blocks.machines.MoldBench;
-import ardenexal.nethercraft.blocks.ores.HellstoneOre;
 import ardenexal.nethercraft.items.Items;
+import ardenexal.nethercraft.mechanical.MoldBench;
 import ardenexal.nethercraft.utils.NethercraftConfiguration;
 import ardenexal.nethercraft.worldgen.OreGeneration;
 import ardenexal.nethercraft.worldgen.WorldGen;
+import ardenexal.nethercraft.worldgen.ores.HellstoneOre;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.Property;

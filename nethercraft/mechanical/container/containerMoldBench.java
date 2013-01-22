@@ -1,5 +1,6 @@
-package ardenexal.nethercraft.blocks.machines;
+package ardenexal.nethercraft.mechanical.container;
 
+import ardenexal.nethercraft.mechanical.tileentity.TileEntityMoldBench;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
