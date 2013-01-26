@@ -1,4 +1,4 @@
-package ardenexal.nethercraft;
+package ardenexal.nethercraft.core;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -15,7 +15,7 @@ public class NethercraftPacketHandler implements IPacketHandler{
 	@Override
 	public void onPacketData(INetworkManager manager,
 			Packet250CustomPayload packet, Player player) {
-		if (packet.channel == "Nethercraft"){
+		if (packet.channel == "Nethercraft|Machine"){
 			handleRandom(packet);
 		}
 		

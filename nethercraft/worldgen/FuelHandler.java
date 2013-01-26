@@ -1,4 +1,4 @@
-package ardenexal.nethercraft;
+package ardenexal.nethercraft.worldgen;
 
 import net.minecraft.item.ItemStack;
 import ardenexal.nethercraft.items.Items;

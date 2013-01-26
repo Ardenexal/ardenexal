@@ -1,16 +1,16 @@
-package ardenexal.nethercraft;
+package ardenexal.nethercraft.worldgen;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import ardenexal.nethercraft.blocks.Blocks;
+import ardenexal.nethercraft.NethercraftWorld;
 import ardenexal.nethercraft.items.Items;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class Smelting {
 
 	public void init() {
-		GameRegistry.addSmelting(Blocks.NetherIron.blockID, new ItemStack(Item.ingotIron), 0.1f);
-		GameRegistry.addSmelting(Blocks.NetherGold.blockID, new ItemStack(Item.ingotGold), 0.1f);
+		GameRegistry.addSmelting(NethercraftWorld.NetherIron.blockID, new ItemStack(Item.ingotIron), 0.1f);
+		GameRegistry.addSmelting(NethercraftWorld.NetherGold.blockID, new ItemStack(Item.ingotGold), 0.1f);
 		
 		GameRegistry.addSmelting(Items.uncookedpickmolditem.itemID, new ItemStack(Items.cookedpickmolditem), 0.1f);
 		GameRegistry.addSmelting(Items.uncookedaxemolditem.itemID, new ItemStack(Items.cookedaxemolditem), 0.1f);

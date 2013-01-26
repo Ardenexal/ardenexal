@@ -2,7 +2,9 @@ package ardenexal.nethercraft.mechanical;
 
 import java.util.Random;
 
-import ardenexal.nethercraft.Nethercraft;
+import ardenexal.nethercraft.NethercraftCore;
+import ardenexal.nethercraft.NethercraftMachine;
+import ardenexal.nethercraft.NethercraftWorld;
 import ardenexal.nethercraft.mechanical.tileentity.TileEntityMoldBench;
 import ardenexal.nethercraft.utils.Reference;
 
@@ -31,7 +33,7 @@ public class MoldBench extends BlockContainer {
                 setHardness(2.0F);
                 setResistance(5.0F);
                 setBlockName("blockMoldBench");
-                setCreativeTab(Nethercraft.tabNethercraft);
+                setCreativeTab(NethercraftCore.tabNethercraft);
                 
                 liquidMetalTank = new LiquidTank(MAX_LIQUID);
         }
@@ -53,7 +55,7 @@ public class MoldBench extends BlockContainer {
                         return false;
                 }
                 //opens gui, to be implemented later
-                player.openGui(Nethercraft.instance,0,world,x,y,z);
+                player.openGui(NethercraftMachine.instance,0,world,x,y,z);
                 return true;
         }
 

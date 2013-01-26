@@ -15,3 +15,9 @@ dropItems(world, (IInventory) tile, i, j, k);
 
 }
 }
+public void addInformation(ItemStack itemstack, EntityPlayer player, List list, boolean par4)
+{
+             if(itemstack.getItemDamage() == 0){list.add("Does 1 heart of damage");}
+        else if(itemstack.getItemDamage() == 1){list.add("Does 2 hearts of damage");}
+        else if(itemstack.getItemDamage() == 2){list.add("Does 4 hearts of damage");}
+}

@@ -1,21 +1,22 @@
 package ardenexal.nethercraft.worldgen.ores;
 
 import net.minecraft.item.Item;
-import ardenexal.nethercraft.CommonProxy;
-import ardenexal.nethercraft.Nethercraft;
+import ardenexal.nethercraft.NethercraftCore;
+import ardenexal.nethercraft.NethercraftWorld;
+import ardenexal.nethercraft.worldgen.WorldProxy;
 
 public class itemHellstone extends Item {
 	public itemHellstone(int par1) {
 		super(par1);
 
 	setMaxStackSize(64);
-	setCreativeTab(Nethercraft.tabNethercraft);
+	setCreativeTab(NethercraftCore.tabNethercraft);
 	setIconIndex(10);
 	setItemName("itemHellstone");
 }
 
 public String getTextureFile() {
-	return CommonProxy.ITEMS_PNG;
+	return WorldProxy.ITEMS_PNG;
 }
 
 }

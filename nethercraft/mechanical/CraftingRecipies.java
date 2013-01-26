@@ -1,4 +1,4 @@
-package ardenexal.nethercraft;
+package ardenexal.nethercraft.mechanical;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

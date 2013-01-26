@@ -1,21 +1,22 @@
 package ardenexal.nethercraft.mechanical.items;
 
 import net.minecraft.item.Item;
-import ardenexal.nethercraft.CommonProxy;
-import ardenexal.nethercraft.Nethercraft;
+import ardenexal.nethercraft.NethercraftCore;
+import ardenexal.nethercraft.NethercraftWorld;
+import ardenexal.nethercraft.worldgen.WorldProxy;
 
 public class UncookedAxeMoldItem extends Item {
 
 	public UncookedAxeMoldItem(int par1) {
 		super(par1);
 		setMaxStackSize(1);
-		setCreativeTab(Nethercraft.tabNethercraft);
+		setCreativeTab(NethercraftCore.tabNethercraft);
 		setIconIndex(1);
 		setItemName("uncookedAxeMold");
 	}
 
 	public String getTextureFile() {
-		return CommonProxy.ITEMS_PNG;
+		return WorldProxy.ITEMS_PNG;
 	}
 
 }

@@ -3,7 +3,7 @@ package ardenexal.nethercraft.utils;
 public class Reference {
 
 	//Texture Locations
-	public static final String SPRITE_SHEET_LOCATION = "/ardenexal/nethercraft/";
+	public static final String SPRITE_SHEET_LOCATION = "/ardenexal/nethercraft/resources/";
 	
 	public static final String BLOCK_SPRITE_SHEET = SPRITE_SHEET_LOCATION + "nethercraft_blocks.png";
 	public static final String ITEM_SPRITE_SHEET = SPRITE_SHEET_LOCATION +"nethercraft_items.png";
@@ -24,4 +24,7 @@ public class Reference {
 	public static final int LIQUID_SILVER_ID = 2222;
 	public static final int LIQUID_COPPER_ID = 2223;
 	public static final int LIQUID_TIN_ID = 2224;
+	
+	public static final int ITEM_UNCOOKEDMOLD = 2225;
+	public static final int ITEM_COOKEDMOLD = 2226;
 }

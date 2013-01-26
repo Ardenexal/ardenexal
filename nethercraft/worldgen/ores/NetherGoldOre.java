@@ -1,8 +1,9 @@
 package ardenexal.nethercraft.worldgen.ores;
 
 import net.minecraft.block.BlockOre;
-import ardenexal.nethercraft.CommonProxy;
-import ardenexal.nethercraft.Nethercraft;
+import ardenexal.nethercraft.NethercraftCore;
+import ardenexal.nethercraft.NethercraftWorld;
+import ardenexal.nethercraft.worldgen.WorldProxy;
 
 public class NetherGoldOre extends BlockOre {
 
@@ -11,13 +12,13 @@ public class NetherGoldOre extends BlockOre {
 		setHardness(4.0F);
 		setStepSound(soundStoneFootstep);
 		setBlockName("NetherGoldOre");
-		setCreativeTab(Nethercraft.tabNethercraft);
+		setCreativeTab(NethercraftCore.tabNethercraft);
 
 
 	}
 
 	@Override
 	public String getTextureFile() {
-		return CommonProxy.BLOCK_PNG;
+		return WorldProxy.BLOCK_PNG;
 	}
 }

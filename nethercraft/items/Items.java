@@ -2,7 +2,7 @@ package ardenexal.nethercraft.items;
 
 
 import net.minecraft.item.Item;
-import ardenexal.nethercraft.Nethercraft;
+import ardenexal.nethercraft.NethercraftWorld;
 import ardenexal.nethercraft.mechanical.items.UncookedAxeMoldItem;
 import ardenexal.nethercraft.mechanical.items.UncookedPickMoldItem;
 import ardenexal.nethercraft.mechanical.items.UncookedShovelMoldItem;

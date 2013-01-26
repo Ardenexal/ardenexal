@@ -1,4 +1,4 @@
-package ardenexal.nethercraft.liquids;
+package ardenexal.nethercraft.mechanical.liquids;
 
 import net.minecraft.item.Item;
 

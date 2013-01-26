@@ -8,10 +8,11 @@ import java.util.Random;
 
 import net.minecraft.block.BlockOre;
 
-import ardenexal.nethercraft.CommonProxy;
-import ardenexal.nethercraft.Nethercraft;
+import ardenexal.nethercraft.NethercraftCore;
+import ardenexal.nethercraft.NethercraftWorld;
 import ardenexal.nethercraft.items.Items;
 import ardenexal.nethercraft.utils.Reference;
+import ardenexal.nethercraft.worldgen.WorldProxy;
 
 public class HellstoneOre extends BlockOre {
 
@@ -21,12 +22,12 @@ public class HellstoneOre extends BlockOre {
 		setHardness(4.0F);
 		setStepSound(soundStoneFootstep);
 		setBlockName("Hellstone");
-		setCreativeTab(Nethercraft.tabNethercraft);
+		setCreativeTab(NethercraftCore.tabNethercraft);
 	}
 
 	@Override
 	public String getTextureFile() {
-		return CommonProxy.BLOCK_PNG;
+		return WorldProxy.BLOCK_PNG;
 	}
 
 	public int idDropped(int par1, Random par2Random, int par3){
