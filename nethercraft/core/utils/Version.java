@@ -1,4 +1,4 @@
-package ardenexal.nethercraft.utils;
+package ardenexal.nethercraft.core.utils;
 
 public class Version {
 

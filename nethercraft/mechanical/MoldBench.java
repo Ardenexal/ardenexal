@@ -5,8 +5,8 @@ import java.util.Random;
 import ardenexal.nethercraft.NethercraftCore;
 import ardenexal.nethercraft.NethercraftMachine;
 import ardenexal.nethercraft.NethercraftWorld;
+import ardenexal.nethercraft.core.utils.Reference;
 import ardenexal.nethercraft.mechanical.tileentity.TileEntityMoldBench;
-import ardenexal.nethercraft.utils.Reference;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;

@@ -1,4 +1,4 @@
-package ardenexal.nethercraft.core;
+package ardenexal.nethercraft.dungeon;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
@@ -9,7 +9,7 @@ import ardenexal.nethercraft.mechanical.container.containerMoldBench;
 import ardenexal.nethercraft.mechanical.gui.GuiMoldBench;
 import ardenexal.nethercraft.mechanical.tileentity.TileEntityMoldBench;
 
-public class CoreProxy{
+public class DungeonProxy {
 	public static String ITEMS_PNG = Reference.ITEM_SPRITE_SHEET;
 	public static String BLOCK_PNG = Reference.BLOCK_SPRITE_SHEET;
 
@@ -18,8 +18,4 @@ public class CoreProxy{
 		// Nothing here as this is the server side proxy
 	}
 
-
-
 }
-
-

@@ -1,6 +1,12 @@
-package ardenexal.nethercraft.utils;
+package ardenexal.nethercraft.core.utils;
 
+import java.util.List;
+
+import ardenexal.nethercraft.core.CoreProxy;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
 public class Utils {

@@ -7,7 +7,7 @@
 * http://www.mod-buildcraft.com/MMPL-1.0.txt
 */
 
-package ardenexal.nethercraft.utils;
+package ardenexal.nethercraft.core.utils;
 
 import java.io.File;
 

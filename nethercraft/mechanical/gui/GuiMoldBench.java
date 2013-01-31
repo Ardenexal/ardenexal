@@ -8,10 +8,10 @@ import net.minecraftforge.client.ForgeHooksClient;
 
 import org.lwjgl.opengl.GL11;
 
+import ardenexal.nethercraft.core.utils.Reference;
 import ardenexal.nethercraft.mechanical.MoldBench;
 import ardenexal.nethercraft.mechanical.container.containerMoldBench;
 import ardenexal.nethercraft.mechanical.tileentity.TileEntityMoldBench;
-import ardenexal.nethercraft.utils.Reference;
 
 public class GuiMoldBench extends GuiContainer {
 

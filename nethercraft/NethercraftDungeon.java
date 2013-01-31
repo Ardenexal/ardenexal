@@ -3,17 +3,15 @@ package ardenexal.nethercraft;
 import java.io.File;
 
 import ardenexal.nethercraft.core.NethercraftPacketHandler;
-import ardenexal.nethercraft.items.Items;
-import ardenexal.nethercraft.mechanical.CraftingRecipies;
-import ardenexal.nethercraft.mechanical.MoldBench;
-import ardenexal.nethercraft.core.CoreProxy;
 import ardenexal.nethercraft.core.utils.CreativeTabNethercraft;
 import ardenexal.nethercraft.core.utils.NethercraftConfiguration;
+import ardenexal.nethercraft.core.utils.Reference;
 import ardenexal.nethercraft.core.utils.Version;
-import ardenexal.nethercraft.worldgen.OreGeneration;
-import ardenexal.nethercraft.worldgen.WorldGen;
-import ardenexal.nethercraft.worldgen.ores.HellstoneOre;
+import ardenexal.nethercraft.dungeon.DungeonProxy;
+import ardenexal.nethercraft.dungeon.JiwaStone;
+
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.Property;
 import cpw.mods.fml.common.Mod;
@@ -31,34 +29,42 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
-@Mod(modid = "Nethercraft|Core", name = "Nethercraft", version = Version.Version)
+@Mod(modid = "Nethercraft|Dungeon", name = "Nethercraft", version = Version.Version)
 @NetworkMod(clientSideRequired = true, serverSideRequired = true,channels={"Nethercraft"}, packetHandler = NethercraftPacketHandler.class)
 
-public class NethercraftCore {
+public class NethercraftDungeon {
 	// The instance of your mod that Forge uses.
-	@Instance("Nethercraft|Core")
-	public static NethercraftCore instance;
+	@Instance("Nethercraft|Dungeon")
+	public static NethercraftDungeon instance;
 		
 
 	// Says where the client and server 'proxy' code is loaded.
-	@SidedProxy(clientSide = "ardenexal.nethercraft.core.client.ClientProxy", serverSide = "ardenexal.nethercraft.core.CoreProxy")
+	@SidedProxy(clientSide = "ardenexal.nethercraft.dungeon.client.ClientProxy", serverSide = "ardenexal.nethercraft.dungeon.DungeonProxy")
 	
-	public static CoreProxy proxy;
+	public static DungeonProxy proxy;
 
-	public static CreativeTabs tabNethercraft = new CreativeTabNethercraft(CreativeTabs.getNextID(), "NetherCraft");
+	public static Item itemJiwastone;
 	
 	public static NethercraftConfiguration mainConfiguration;
 	@PreInit
 	public void preInit(FMLPreInitializationEvent event) {
-		mainConfiguration = new NethercraftConfiguration(new File(event.getModConfigurationDirectory(),"Nethercraft.conf"));
+		
 
 	}
 
 	@Init
 	public void load(FMLInitializationEvent event) {
 
-
+		Property jiwastoneid = NethercraftCore.mainConfiguration.getItem("jiwastone.id", Reference.ITEM_JIWA_STONE);
 		
+		try{
+			NethercraftCore.mainConfiguration.load();
+			
+			itemJiwastone = new JiwaStone(jiwastoneid.getInt());
+			LanguageRegistry.addName(itemJiwastone, "Jiwa Stone");
+		}finally{
+			NethercraftCore.mainConfiguration.save();
+		}
 		
 		//Proxy
 		proxy.registerRenderers();

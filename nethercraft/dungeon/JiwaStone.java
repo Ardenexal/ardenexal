@@ -1,4 +1,4 @@
-package ardenexal.nethercraft.items;
+package ardenexal.nethercraft.dungeon;
 
 import net.minecraft.item.Item;
 import ardenexal.nethercraft.NethercraftCore;
@@ -11,7 +11,7 @@ public class JiwaStone extends Item {
 		super(par1);
 		setMaxStackSize(1);
 		setCreativeTab(NethercraftCore.tabNethercraft);
-		setIconIndex(0);
+		setIconCoord(0, 0);
 		setItemName("jiwaStone");
 	}
 

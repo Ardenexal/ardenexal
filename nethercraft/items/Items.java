@@ -3,6 +3,7 @@ package ardenexal.nethercraft.items;
 
 import net.minecraft.item.Item;
 import ardenexal.nethercraft.NethercraftWorld;
+import ardenexal.nethercraft.dungeon.JiwaStone;
 import ardenexal.nethercraft.mechanical.items.UncookedAxeMoldItem;
 import ardenexal.nethercraft.mechanical.items.UncookedPickMoldItem;
 import ardenexal.nethercraft.mechanical.items.UncookedShovelMoldItem;

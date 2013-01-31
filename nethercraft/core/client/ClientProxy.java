@@ -3,7 +3,7 @@ package ardenexal.nethercraft.core.client;
 
 import net.minecraftforge.client.MinecraftForgeClient;
 import ardenexal.nethercraft.core.CoreProxy;
-import ardenexal.nethercraft.utils.Reference;
+import ardenexal.nethercraft.core.utils.Reference;
 
 
 public class ClientProxy extends CoreProxy {

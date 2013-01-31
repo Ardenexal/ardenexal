@@ -10,8 +10,8 @@ import net.minecraft.block.BlockOre;
 
 import ardenexal.nethercraft.NethercraftCore;
 import ardenexal.nethercraft.NethercraftWorld;
+import ardenexal.nethercraft.core.utils.Reference;
 import ardenexal.nethercraft.items.Items;
-import ardenexal.nethercraft.utils.Reference;
 import ardenexal.nethercraft.worldgen.WorldProxy;
 
 public class HellstoneOre extends BlockOre {

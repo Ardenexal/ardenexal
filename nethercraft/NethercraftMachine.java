@@ -3,15 +3,15 @@ package ardenexal.nethercraft;
 import java.io.File;
 
 import ardenexal.nethercraft.core.NethercraftPacketHandler;
+import ardenexal.nethercraft.core.utils.CreativeTabNethercraft;
+import ardenexal.nethercraft.core.utils.NethercraftConfiguration;
+import ardenexal.nethercraft.core.utils.Reference;
+import ardenexal.nethercraft.core.utils.Version;
 import ardenexal.nethercraft.items.Items;
 import ardenexal.nethercraft.mechanical.MechanicalProxy;
 import ardenexal.nethercraft.mechanical.MoldBench;
 import ardenexal.nethercraft.mechanical.items.itemCookedMold;
 import ardenexal.nethercraft.mechanical.items.itemUncookedMold;
-import ardenexal.nethercraft.utils.CreativeTabNethercraft;
-import ardenexal.nethercraft.utils.NethercraftConfiguration;
-import ardenexal.nethercraft.utils.Reference;
-import ardenexal.nethercraft.utils.Version;
 
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
@@ -41,7 +41,7 @@ public class NethercraftMachine {
 	public static NethercraftMachine instance;
 
 	// Says where the client and server 'proxy' code is loaded.
-	@SidedProxy(clientSide = "ardenexal.nethercraft.mechanical.client.ClientProxy", serverSide = "ardenexal.nethercraft.mechanical.CommonProxy")
+	@SidedProxy(clientSide = "ardenexal.nethercraft.mechanical.client.ClientProxy", serverSide = "ardenexal.nethercraft.mechanical.MechanicalProxy")
 	public static MechanicalProxy proxy;
 	public static NethercraftConfiguration mainConfiguration;
 

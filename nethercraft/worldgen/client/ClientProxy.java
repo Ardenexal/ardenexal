@@ -2,7 +2,7 @@ package ardenexal.nethercraft.worldgen.client;
 
 
 import net.minecraftforge.client.MinecraftForgeClient;
-import ardenexal.nethercraft.utils.Reference;
+import ardenexal.nethercraft.core.utils.Reference;
 import ardenexal.nethercraft.worldgen.WorldProxy;
 
 public class ClientProxy extends WorldProxy {

@@ -2,8 +2,8 @@ package ardenexal.nethercraft.mechanical.client;
 
 
 import net.minecraftforge.client.MinecraftForgeClient;
+import ardenexal.nethercraft.core.utils.Reference;
 import ardenexal.nethercraft.mechanical.MechanicalProxy;
-import ardenexal.nethercraft.utils.Reference;
 
 
 public class ClientProxy extends MechanicalProxy {

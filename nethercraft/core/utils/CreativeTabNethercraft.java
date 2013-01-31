@@ -1,4 +1,4 @@
-package ardenexal.nethercraft.utils;
+package ardenexal.nethercraft.core.utils;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
